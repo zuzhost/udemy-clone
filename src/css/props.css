@@ -16,6 +16,9 @@ button{
     outline: none;
     cursor: pointer;
 }
+select, textarea, input{
+    outline: none;
+}
 
 .flex{display: flex;}
 .aic{align-items: center;}
@@ -34,6 +37,7 @@ button{
 .c777{color: #777;}
 
 .s13{font-size: 13px;}
+.s14{font-size: 14px;}
 .s15{font-size: 15px;}
 .s20{font-size: 20px;}
 .s24{font-size: 24px;}
