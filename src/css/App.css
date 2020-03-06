@@ -1,6 +1,87 @@
 .App{
     padding: 0px 20px 0px 0px;
 }
+
+/*
+VIDEO PLAYER
+*/
+.player{
+    width: 100%;
+    height: 55%;
+    background: #000;
+}
+.player video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.player .ctrls{
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 90px;
+    background: rgba(62, 62, 62, 0.54);
+    z-index: 9;
+    padding: 0px 15px;
+}
+.player .ctrls .pp{
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #ea5252;
+    color: #fff;    
+}
+.player .ctrls .timer{
+    flex: 1;
+    margin: 0px;
+    text-align: center;
+}
+.player .ctrls .slider{
+    flex: 3;
+}
+.player .ctrls .slider .prog{
+    width: 100%;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+.player .ctrls .slider .bar{
+    width: 40%;
+    height: 10px;
+    background: #ea5252;
+    border-radius: 10px;
+}
+.player .ctrls .slider .bar .knob{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 5px #000;
+}
+.player .ctrls .vol{
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(234, 82, 82, 0);
+    color: #fff;
+    margin: 0px 10px;
+}
+.player .ctrls .fs{
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(234, 82, 82, 0);
+    color: #fff;
+    margin: 0px 10px;
+}
+
+
 /*
 SIDEBAR
 */
@@ -47,20 +128,20 @@ SIDEBAR
 .sidebar .updated-course .lbl{}
 .sidebar .updated-course .lbl .author{}
 
-.sidebar .stats{
+.course-stats, .sidebar .stats{
     padding: 70px 50px;
 }
-.sidebar .stats .stats-box{
+.course-stats .stats-box, .sidebar .stats .stats-box{
     flex-direction: column;
     width: 110px;
 }
-.sidebar .stats .stats-box .ico{
+.course-stats .stats-box .ico, .sidebar .stats .stats-box .ico{
     margin-bottom: 15px;
 }
 .sidebar .stats .stats-box .val{}
 .sidebar .stats .stats-box .lbl{}
-.sidebar .stats .stats-box .ico-points{color: #1aab53;}
-.sidebar .stats .stats-box .ico-battery{color: #ea5252;}
+.course-stats .ico-points, .sidebar .stats .stats-box .ico-points{color: #1aab53;}
+.course-stats .ico-battery, .sidebar .stats .stats-box .ico-battery{color: #ea5252;}
 
 .sidebar .me{
     padding: 20px 40px;
@@ -285,4 +366,60 @@ RIGHTBAR
     top: 50%;
     transform: translateY(-50%);
     border: 40px rgba(255, 255, 255, 0.45) solid;
+}
+
+/*
+COURSE PREVIEW
+*/
+.course-page{}
+.course-info{flex: 1;}
+.course-page .tutor{}
+.course-page .tutor .pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #eee;
+    margin-right: 10px;
+}
+.course-page .tutor .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.course-page .tutor .meta{}
+.course-page .tutor .meta .name{}
+.course-page .tutor .meta .uname{}
+.course-page .course-meta{
+    padding: 40px 0px;
+}
+.course-page .course-meta .title{
+    font-weight: 600;
+}
+.course-page .course-meta .about{}
+
+.course-videos{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+.course-videos a{
+    margin: 10px 0px;
+}
+.course-videos a .id{
+    background: #ea5252;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.course-videos a .meta{}
+.course-videos a .meta .lbl{}
+.course-videos a .meta .dur{}
+.course-videos a:hover{}
+
+.course-preview{
+    flex: 2;
+    margin-left: 20px;
 }
