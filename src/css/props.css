@@ -30,6 +30,7 @@ select, textarea, input{
 
 .noul{text-decoration: none;}
 
+.ibl{display: inline-block;}
 .bl{display: block;}
 
 .cfff{color: #fff;}

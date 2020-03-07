@@ -423,3 +423,64 @@ COURSE PREVIEW
     flex: 2;
     margin-left: 20px;
 }
+
+.extra-block{}
+.chat{
+    flex: 1;
+    margin-right: 50px;
+}
+.chat .messages{
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 30px 0px;
+}
+.chat .messages .bubble{
+    align-self: flex-start;
+    margin: 7px 0px;
+    width: 100%;
+}
+.chat .messages .bubble .txt{
+    background: #d6d6d6;
+    line-height: 1;
+    padding: 14px;
+    border-radius: 20px 20px 20px 3px;
+}
+.chat .messages .bubble-mine{
+    text-align: right;
+}
+.chat .messages .bubble-mine .txt{
+    border-radius: 20px 20px 3px 20px !important;
+    background: #272727;
+    color: #fff;
+}
+
+.now-watching{
+    flex: 1;
+}
+.now-watching .tooltip{
+    background: #ea5252;
+    top: 50px;
+    right: 0px;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.now-watching .you-list{margin-top :25px;}
+.now-watching .you{
+    margin-bottom: 30px;
+}
+.now-watching .you .pic{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    background: #ddd;
+    border-radius: 100%;
+}
+.now-watching .you .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.now-watching .you .meta{}
+.now-watching .you .meta .name{}
+.now-watching .you .meta .uname{}
