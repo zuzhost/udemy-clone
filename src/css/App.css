@@ -109,6 +109,7 @@ SIDEBAR
 }
 .sidebar .nav li a .lbl{}
 
+.sidebar .nav li a.active,
 .sidebar .nav li a.on{
     border-left: 2px #ea5252 solid;
     color: #ea5252;

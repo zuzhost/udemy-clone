@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import Course1 from "../ui/course-1.png";
 import Course2 from "../ui/course-2.jpg";
 
-function CoursePage(){
+function CoursePage(props){
 
     const [course, setCourse] = useState(
         {
@@ -39,7 +39,11 @@ function CoursePage(){
         }
     );
 
+    const courseID = props.match.params.courseid;
+
     var courseVideos = [];
+
+
     for(let i = 0; i < course.videos.length; i++){
         courseVideos.push(
             <a href="#" key={"course-video-" + i} className="noul aic rel flex">
@@ -51,7 +55,6 @@ function CoursePage(){
             </a>            
         );
     }
-
     
     return (
         <div className="course-page rel flex">
