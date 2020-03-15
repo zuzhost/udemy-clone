@@ -28,6 +28,8 @@ function Sidebar(){
         );
     }
 
+    console.log(global.fire);
+
     return (
         <div className="sidebar rel">
             <a href="#" className="logo bl">
@@ -64,13 +66,20 @@ function Sidebar(){
 
 
             <div className="me flex aic">
-                <div className="photo cfff s24">
+                {global.fire.ID ? <React.Fragment><div className="photo cfff s24">
                     <img src="http://placeimg.com/100/100/people" className="bl" />
                 </div>
                 <div className="lbl s15 fontb c333">
                     Kamran Wajdani   
                     <h2 className="uname s13 c777">@kamranwajdani</h2>                 
                 </div>
+                </React.Fragment>
+                : 
+                <NavLink to={"oauth"} className={"aic link noul flex c333"}>
+                    <div className={"ico s24 rel cfff icon-portrait-male"} />
+                    <h2 className="lbl s20 fontb">Sign in</h2>
+                </NavLink>
+                }
             </div>
 
         </div>

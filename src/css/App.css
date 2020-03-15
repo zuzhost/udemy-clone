@@ -3,6 +3,14 @@
 }
 
 /*
+Splash
+*/
+.splash{}
+.splash img{
+    height: 100px;
+}
+
+/*
 VIDEO PLAYER
 */
 .player{
@@ -162,10 +170,27 @@ SIDEBAR
 }
 .sidebar .me .lbl{}
 
+.sidebar .me .link{}
+.sidebar .me .link .ico{
+    width: 50px;
+    height: 50px;
+    background: #ea5252;
+    border-radius: 100%;    
+    margin-right: 10px;
+}
+.sidebar .me .link .ico:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sidebar .me .link .lbl{}
+
 .app-content{
     flex: 2;
     padding: 20px 40px 20px 20px;
 }
+
 
 /*
 HOME PAGE
@@ -485,3 +510,36 @@ COURSE PREVIEW
 .now-watching .you .meta{}
 .now-watching .you .meta .name{}
 .now-watching .you .meta .uname{}
+
+
+/*
+OAUTH VIEW
+*/
+.oauth-view{
+    width: 400px;
+    margin: 100px auto;
+}
+.oauth-view .otitle{}
+.oauth-view .oline{
+    margin-bottom: 30px;
+}
+.oauth-view .iput{
+    width: 100%;
+    border: 1px #b1b1b1 solid;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+.oauth-view .button{
+    width: 100%;
+    border: 1px #d43a3a solid;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    background: #ea5252;
+}
+.oauth-view .button:hover{
+    background: #e06161;
+}
