@@ -30,13 +30,13 @@ global.fire = {
     ID: null
 };
 var firebaseConfig = {
-  apiKey: "AIzaSyA8rNwFbcpM3_bf-6ySwL6kKxpv25U59yI",
-  authDomain: "findmyjobpk.firebaseapp.com",
-  databaseURL: "https://findmyjobpk.firebaseio.com",
-  projectId: "findmyjobpk",
-  storageBucket: "findmyjobpk.appspot.com",
-  messagingSenderId: "44277085031",
-  appId: "1:44277085031:web:e9373700b6b6218fec75c2"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  databaseURL: "YOUR_DB_URL",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
 };
 // Initialize Firebase
 global.firebase.initializeApp(firebaseConfig);
