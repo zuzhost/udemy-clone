@@ -516,18 +516,20 @@ COURSE PREVIEW
 OAUTH VIEW
 */
 .oauth-view{
-    width: 400px;
+    width: 301px;
     margin: 100px auto;
 }
+.oauth-view-verify{width: 420px;}
 .oauth-view .otitle{}
 .oauth-view .oline{
     margin-bottom: 30px;
+    margin-top: 10px;
 }
 .oauth-view .iput{
     width: 100%;
     border: 1px #b1b1b1 solid;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 10px 0px;
     box-sizing: border-box;
 }
@@ -535,11 +537,14 @@ OAUTH VIEW
     width: 100%;
     border: 1px #d43a3a solid;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 10px 0px;
     box-sizing: border-box;
     background: #ea5252;
 }
 .oauth-view .button:hover{
     background: #e06161;
+}
+.oauth-view .__phonesigner__{
+    margin: 10px 0px 20px 0px;
 }

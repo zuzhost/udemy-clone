@@ -23,7 +23,7 @@ select, textarea, input{
 .flex{display: flex;}
 .aic{align-items: center;}
 .jic{justify-content: center;}
-
+.anim{transition:all 0.2s linear 0s;}
 .fixed{position: fixed;}
 .abs{position: absolute;}
 .abc{
@@ -48,6 +48,7 @@ select, textarea, input{
 .s18{font-size: 18px;}
 .s20{font-size: 20px;}
 .s24{font-size: 24px;}
+.s40{font-size: 40px;}
 .s50{font-size: 50px;}
 
 .fontn{
@@ -102,4 +103,38 @@ select, textarea, input{
     bottom: 0px;
     z-index: 2;
     background: rgba(255, 255, 255, 0.95);
+}
+
+
+/*ZUZ TOAST*/
+.zuz-toast{
+    background: #000;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    z-index: 99999;
+    transform: translateY(150px);
+    opacity: 0;
+}
+.zuz-toast-visible{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.zuz-toast-hidden{
+    transform: translateY(-150px);
+    opacity: 0;
+}
+.zuz-toast button{
+    border: 0px;
+    line-height: 1;
+    padding: 4px 5px 4px 20px;
+    color: #fff;
+    background: rgba(0,0,0,0);
+    margin-left: 20px;
+    border-left: 1px #2d2d2d solid;
+}
+.zuz-toast button:hover{
+    opacity: 0.5;
 }
